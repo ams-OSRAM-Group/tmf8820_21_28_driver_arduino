@@ -5,7 +5,7 @@ This is a simple universal driver to show the capabilies of the time-of-flight d
 ## Requirements  
 
 - an Arduino Uno R3 board 
-- an ams TMF882x Arduino Shield Board (MS-TMF882x-01) [TMF882X MCU SHIELD EVM](https://ams.com/tmf8828-mcu-shield-evm)
+- an ams TMF882x Arduino Shield Board (MS-TMF882x-01) [TMF882X MCU SHIELD EVM](https://ams-osram.com/products/boards-kits-accessories/kits/ams-tmf882x-evm-eb-shield-evaluation-kit)
 - a USB B cable
 - the [Arduino IDE](https://www.arduino.cc/en/software) to compile and download the Arduino Uno example application
 
