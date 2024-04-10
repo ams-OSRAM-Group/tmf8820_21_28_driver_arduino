@@ -1,0 +1,46 @@
+Release Notes tmf8828 arduino uno driver
+----------------------------------------
+v12
+- made clock correction more robust for very long measurement intervals
+- upgraded firmware hex file to: tmf8820/tmf8821 version: 2.36.20 and tmf8828  version: 2.36.54
+
+v11
+- made tmf8828.{h,c} a plain C code driver
+- now can also upload image for TMF8821 (start with E instead of e)
+
+v10
+- application for 3 TMF8828 changed to add a waiting time for publishing of help menu
+
+v9
+- this is now an universal driver for TMF8820, TMF8821 and TMF8828
+- reworked the structure application tmf8828_a. There are seperate application files (tmf8828_app.*).
+- support only one multi-tmf8828/tmf882x arduino project: set NR_OF_TMF8828 to 1,2 or 3 and recompile
+- upgraded firmware to patch 0x35
+
+v8
+- added a new project with 3 tmf8828: tmf8828_three
+- added requirements.txt and readme.md for python subdirectory
+- added a python script talk_to_3_arduino_1MBaud.py which talks to 3 tmf8828 via 1 arduino.
+
+v7
+- switch on extended confidence range for result reporting
+
+v6
+- fixed issue with mode switching (now check register 0x10 to show mode)
+- configuration for duo is: 250KIter, 500KIter or 1000KIter
+
+v5 
+- unified #output for parsing on host side
+
+v4
+- fixed factory calibration for 2x tmf8828 
+
+v3
+- fixed factory calibration for 8x8 mode
+
+v2 
+- make is possible to have multiple instances of tmf8828 device with a single driver code
+- added 2nd project tmf8828_duo that uses 2 tmf8828
+  
+v1 
+- initial I2C communication working
