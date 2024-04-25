@@ -207,6 +207,7 @@ void enable ( uint32_t imageStartAddress, const unsigned char * image, int32_t i
         configure();
         stateTmf8828 = TMF8828_STATE_STOPPED;
         printHelp(); // prints on UART usage and waits for user input on serial
+        tmf8828ReadDeviceInfo( &(tmf8828[0]) );
         printDeviceInfo( );
       }
       else
@@ -611,8 +612,8 @@ void printDeviceInfo ( )
   PRINT_CONST_STR( F(  " Chip " ) );
   PRINT_INT( tmf8828[0].device.chipVersion[0] ); PRINT_CHAR( '.' );
   PRINT_INT( tmf8828[0].device.chipVersion[1] ); 
-  PRINT_CONST_STR( F(  " Serial " ) );
-  PRINT_INT( tmf8828[0].device.deviceSerialNumber );
+  PRINT_CONST_STR( F(  " Serial 0x" ) );
+  PRINT_UINT_HEX( tmf8828[0].device.deviceSerialNumber );
   PRINT_LN( );
 }
 

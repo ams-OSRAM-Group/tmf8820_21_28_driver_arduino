@@ -1,5 +1,9 @@
 Release Notes tmf8828 arduino uno driver
 ----------------------------------------
+v14
+- fix serial number readout
+v13
+- internal test release
 v12
 - made clock correction more robust for very long measurement intervals
 - upgraded firmware hex file to: tmf8820/tmf8821 version: 2.36.20 and tmf8828  version: 2.36.54

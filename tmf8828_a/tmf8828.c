@@ -703,7 +703,7 @@ int8_t tmf8828ReadDeviceInfo ( tmf8828Driver * driver )
   i2cRxReg( driver, driver->i2cSlaveAddress, TMF8828_COM_APP_ID, 4, driver->device.appVersion );  // tmf8828 application has 4 verion bytes
   if ( driver->device.appVersion[0] == TMF8828_COM_APP_ID__application )
   {
-    i2cTxReg( driver, driver->i2cSlaveAddress, TMF8828_COM_SERIAL_NUMBER_0, 4, dataBuffer );
+    i2cRxReg( driver, driver->i2cSlaveAddress, TMF8828_COM_SERIAL_NUMBER_0, 4, dataBuffer );
     driver->device.deviceSerialNumber = tmf8828GetUint32( &(dataBuffer[0]) );
   }
   return APP_SUCCESS_OK;

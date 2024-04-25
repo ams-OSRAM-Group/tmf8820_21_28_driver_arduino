@@ -39,9 +39,11 @@ extern "C" {
 // 1.10 .. only changed application, nothing in driver
 // 1.11 .. plain C driver, no more c++
 // 1.12 .. clock correction more robust for very long intervals
+// 1.13 .. internal test version
+// 1.14 .. fix serial number readout
 
 #define TMF8828_DRIVER_MAJOR_VERSION  1
-#define TMF8828_DRIVER_MINOR_VERSION  12
+#define TMF8828_DRIVER_MINOR_VERSION  14
 
 
 // ---------------------------------------------- defines -----------------------------------------
