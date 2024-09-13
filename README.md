@@ -73,7 +73,7 @@ Note that the interrupt pin (digital pin 2) is not available if 3 tmf8828 are us
 and wire-or all 3 interrupt pins to only 1 than you can use interrupt driver communication again. 
 You can use application only interrupt driven when digital pin 2 is available. For interrupt driven you need to set the following define to 1: **USE_INTERRUPT_TO_TRIGGER_READ**
 
-
+![image](./ThreeBoardSetup.jpg)
 
 ## UART and command line interpreter  
 
